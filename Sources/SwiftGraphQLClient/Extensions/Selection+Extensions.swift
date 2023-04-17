@@ -1,8 +1,5 @@
 import Foundation
 
-#if canImport(SwiftGraphQL)
-import SwiftGraphQL
-
 extension GraphQLOperation {
     
     /// Turns GraphQLOperation into an operation kind.
@@ -17,4 +14,3 @@ extension GraphQLOperation {
         }
     }
 }
-#endif

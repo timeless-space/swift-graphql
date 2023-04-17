@@ -7,12 +7,9 @@ Pod::Spec.new do |spec|
 
   spec.version      = '4.1.0'
   spec.source       = { 
-		:git => 'https://github.com/maticzav/swift-graphql.git', 
+		:git => 'https://github.com/timeless-space/swift-graphql.git', 
 		:tag => spec.version.to_s 
 	}
 
   spec.source_files  = "Sources/**/*.swift"
-
-  spec.deprecated = true
-  spec.deprecated_in_favor_of = "Swift Package Manager"
 end

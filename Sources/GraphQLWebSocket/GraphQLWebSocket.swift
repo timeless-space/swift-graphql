@@ -1,7 +1,6 @@
 // This file is heavily inspired by https://github.com/enisdenjo/graphql-ws.
 
 import Combine
-import GraphQL
 import Foundation
 import Starscream
 

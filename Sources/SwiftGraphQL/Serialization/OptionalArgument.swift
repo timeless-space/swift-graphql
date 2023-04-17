@@ -1,5 +1,4 @@
 import Foundation
-import GraphQL
 
 /// Tells whether a concreate type has a value.
 ///

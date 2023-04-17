@@ -1,7 +1,6 @@
 // The spec follow https://github.com/enisdenjo/graphql-ws/blob/master/PROTOCOL.md.
 
 import Foundation
-import GraphQL
 
 /// Represents any messange that may be sent from a client.
 protocol ClientMessageInterface: Encodable, Equatable {}

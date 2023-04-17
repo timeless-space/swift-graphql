@@ -2,7 +2,6 @@ import Foundation
 
 import Combine
 import Foundation
-import GraphQL
 
 /// Exchange that lets you add authorization header to your operations.
 ///

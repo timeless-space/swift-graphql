@@ -1,8 +1,6 @@
 import Foundation
-
 import Combine
 import Foundation
-import GraphQL
 
 /// Exchange that prevents multiple executions of the same operation from running in parallel.
 ///

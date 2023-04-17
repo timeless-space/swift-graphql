@@ -1,6 +1,5 @@
 import Combine
 import Foundation
-import GraphQL
 
 /// An exchange that doesn't do anything and returns no results.
 public struct FallbackExchange: Exchange {

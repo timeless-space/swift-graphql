@@ -1,9 +1,5 @@
 import Combine
 import Foundation
-import GraphQL
-
-#if canImport(SwiftGraphQL)
-import SwiftGraphQL
 
 /// Extensions to the core implementation that connect SwiftGraphQL's Selection to the execution
 /// mechanisms of the client.
@@ -134,4 +130,3 @@ extension OperationResult {
         return result
     }
 }
-#endif

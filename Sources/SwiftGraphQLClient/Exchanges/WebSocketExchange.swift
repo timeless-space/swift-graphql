@@ -1,9 +1,7 @@
 import Combine
 import Foundation
-import GraphQL
 
-#if canImport(GraphQLWebSocket)
-import GraphQLWebSocket
+#if canImport(GraphQLWebSocket)WebSocket
 
 /// Exchange that lets you perform GraphQL queries over WebSocket protocol.
 ///

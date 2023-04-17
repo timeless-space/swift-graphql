@@ -1,6 +1,4 @@
-import GraphQL
 import Foundation
-
 import Logging
 
 /// Structure that lets you configure WebSocket's behaviour.

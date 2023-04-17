@@ -1,6 +1,5 @@
 import Combine
 import Foundation
-import GraphQL
 
 /// Exchange that logs operations going down- and results going up-stream.
 public struct DebugExchange: Exchange {

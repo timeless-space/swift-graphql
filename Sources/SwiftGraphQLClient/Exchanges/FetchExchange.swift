@@ -1,6 +1,5 @@
 import Combine
 import Foundation
-import GraphQL
 
 /// Protocol that outlines methods that are required by FetchExchange to operate as expected.
 ///

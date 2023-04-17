@@ -1,6 +1,5 @@
 import Combine
 import Foundation
-import GraphQL
 
 /// Operation describes a single request that may be processed by multiple exchange along the chain.
 public struct Operation: Identifiable, Equatable, Hashable {

@@ -1,9 +1,5 @@
 import Combine
 import Foundation
-import GraphQL
-
-#if canImport(GraphQLWebSocket)
-import GraphQLWebSocket
 
 extension GraphQLWebSocket {
     
@@ -48,4 +44,3 @@ extension GraphQLWebSocket {
         return publisher
     }
 }
-#endif
