@@ -70,26 +70,26 @@ public extension Schema {
     // MARK: - Operations
 
     /// Query operation type in the schema.
-    var query: Operation {
+    var query: OperationType {
         .query(object(name: _query)!)
     }
 
     /// Mutation operation type in the schema.
-    var mutation: Operation? {
+    var mutation: OperationType? {
         _mutation
             .flatMap { object(name: $0) }
             .flatMap { .mutation($0) }
     }
 
     /// Subscription operation type in the schema.
-    var subscription: Operation? {
+    var subscription: OperationType? {
         _subscription
             .flatMap { object(name: $0) }
             .flatMap { .subscription($0) }
     }
 
     /// Returns operation types in the schema.
-    var operations: [Operation] {
+    var operations: [OperationType] {
         [query, mutation, subscription].compactMap { $0 }
     }
     

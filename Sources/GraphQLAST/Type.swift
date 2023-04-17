@@ -1,6 +1,6 @@
 import Foundation
 
-public enum Operation {
+public enum OperationType {
     case query(ObjectType)
     case mutation(ObjectType)
     case subscription(ObjectType)

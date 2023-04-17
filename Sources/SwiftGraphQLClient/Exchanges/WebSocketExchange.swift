@@ -1,8 +1,6 @@
 import Combine
 import Foundation
 
-#if canImport(GraphQLWebSocket)WebSocket
-
 /// Exchange that lets you perform GraphQL queries over WebSocket protocol.
 ///
 /// - NOTE: By default WebSocketExchange only handles subscription operations
@@ -109,4 +107,3 @@ public class WebSocketExchange: Exchange {
         return upstream.merge(with: socketstream).eraseToAnyPublisher()
     }
 }
-#endif
