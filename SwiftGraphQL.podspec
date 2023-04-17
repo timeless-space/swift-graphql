@@ -14,4 +14,5 @@ Pod::Spec.new do |spec|
   spec.source_files  = "Sources/**/*.swift"
 
   spec.dependency "Logging", "~> 1.4"
+  spec.dependency "Starscream", "~> 4.0.0"
 end
