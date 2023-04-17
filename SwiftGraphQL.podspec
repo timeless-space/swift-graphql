@@ -12,4 +12,6 @@ Pod::Spec.new do |spec|
 	}
 
   spec.source_files  = "Sources/**/*.swift"
+
+  spec.dependency "Logging", "~> 1.4"
 end
