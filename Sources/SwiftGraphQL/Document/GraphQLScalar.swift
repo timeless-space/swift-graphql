@@ -17,8 +17,8 @@ public protocol GraphQLScalar: Encodable {
 extension Array: GraphQLScalar where Element: GraphQLScalar {
     public init(from codable: AnyCodable) throws {
         switch(codable.value) {
-        case let value as [AnyCodable]:
-            self = try value.map { try Element(from: $0) }
+        case let value as [Any]:
+            self = try value.map { try Element(from: AnyCodable($0)) }
         default:
             let err = ScalarDecodingError.unexpectedScalarType(
                 expected: "Collection",
