@@ -133,6 +133,8 @@ extension Double: GraphQLScalar {
             self = Double(value)
         case let value as Double:
             self = value
+        case let value as Int:
+            self = Double(value)
         default:
             let err = ScalarDecodingError.unexpectedScalarType(
                 expected: "Double",
