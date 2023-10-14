@@ -118,8 +118,13 @@ extension OperationResult {
     fileprivate func decode<T, TypeLock>(
         selection: Selection<T, TypeLock>
     ) throws -> DecodedOperationResult<T> {
-        let data = try selection.decode(raw: self.data)
-        
+        let data: T
+        do {
+            data = try selection.decode(raw: self.data)
+        } catch {
+            data = try selection.__mock()
+        }
+
         let result = DecodedOperationResult(
             operation: self.operation,
             data: data,
